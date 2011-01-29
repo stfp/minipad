@@ -1,5 +1,7 @@
 minipad is a small editor with tagging support: write down your notes, tag them, and use tags to search.
 
+You can see it running at: http://popidiou.net/minipad or http://mix10k.visitmix.com/Entry/Details/260
+
 It uses HTML5 localStorage for persistence (no server required !)
 
 Complete with tag auto-completion, keyboard shortcuts, and an  import/export feature.
