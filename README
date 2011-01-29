@@ -1,0 +1,7 @@
+minipad is a small editor with tagging support: write down your notes, tag them, and use tags to search.
+
+It uses HTML5 localStorage for persistence (no server required !)
+
+Complete with tag auto-completion, keyboard shortcuts, and an  import/export feature.
+
+Compatible with FF3.6, IE8 and Chrome 4.

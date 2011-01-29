@@ -1,0 +1,30 @@
+<!DOCTYPE HTML> 
+<html><head><title id="t">minipad</title> 
+<link type="text/css" rel="Stylesheet" href="m.css" /><script type="text/javascript" src="m.js"></script></head>
+<body onload="init();"><div id="hdr">
+<strong>minipad</strong> :: <a href="#" onclick="newDoc();">New</a> :: <a href="#" onclick="searchMode();">Find</a> :: <a href="#" onclick="importMode();">Import/Export</a> :: <a href="#" onclick="help();">Help</a>
+<br/></div>
+<div id="writeM" class="iv">
+<span id="tags"></span><input id="tage" value="" onkeyup="cmplup(this, event);" onchange="addt(this);" class="tag"></input>
+<form name="editor"><textarea id="data" rows="30" onchange="dirt(1);"></textarea>
+</form>
+</div>
+<div id="searchM" class="iv">
+<div id="srui">You have <b id="doccnt"></b> document(s) and <b id="tagcnt"></b> tag(s). Click on tags to select and see for matching documents.
+<div id="tls"></div></div><div id="dls"></div></div>
+<div id="debugM" class="iv"><a href="#" onclick="clearAll();">Remove all data</a><div id="debug"></div></div>
+<div id="importM" class="iv"><div id="export"><h3>Export</h3>Copy data for later import<br/>
+<form>
+<input type="button" value="Export data" onclick="expt();"><br/>
+<textarea readonly="1" id="xpa" class="ixa"></textarea></form></div>
+<hr/>
+<div id="import">
+<h3>Import</h3>Load a previous export - <b>WILL ERASE LOCAL DATA !</b><br/>
+<form><textarea id="ipa" class="ixa"></textarea><br/>
+<input type="button" value="Import data" onclick="impt();">
+</form>
+</div>
+<hr/><div><h3>Reset</h3><input type="button" onclick="clearAll();" value="Erase local data"></div>
+
+</div></div>
+<div id="msg"></div></body></html> 
